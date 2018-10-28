@@ -1,13 +1,10 @@
-.container {
-	height:100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+body {
+	height:100vh; /* for vertical alignment */
+	background-color:#29504D;
+	color: #C4DCEA;
 }
-#page-content {
-	width:40%;
-	min-width:300px;
-	text-align:center;
+.container {
+	max-width:600px; /* to keep the content constrained */
 }
 label {
 	display:block;
@@ -16,6 +13,12 @@ label {
 	font-size:2em;
 	font-weight:bold;
 }
-p {
-	margin: 0.5em 0;
+.content {
+	/*background-color:orange;*/
+}
+a, a:link, a:visited, a:active {
+	color:#fff;
+}
+a:hover {
+	color:#fff;
 }

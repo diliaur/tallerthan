@@ -9,32 +9,34 @@
 <body>
 
 
-<div class='container'>
-	<div id="page-content">
-		<div id="directions">
+<div class='container h-100'>
+	<div class='row h-100 align-items-center'>
+		<div class='col'>
+			<div id="directions">
 			Enter your height in feet and inches.
-		</div>
-		<div class="form-group">
-			<label>Feet:</label> 
-			<input type="text" name="height-feet" id="height-feet" class="form-control">
-		</div>
-		<div class="form-group">
-			<label>Inches:</label>
-			<input type="text" name="height-inches" id="height-inches" class="form-control">
-		</div>
-		<input id="submit" type="submit" name="submit" aria-role="button" class="btn btn-primary btn-block">
-		<p>
-			<a href="">Reset</a>	
-		</p>
-		<hr>
-		<div>
+			</div>
+			<hr>
+			<div class="form-group">
+				<label>Feet:</label> 
+				<input type="text" name="height-feet" id="height-feet" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Inches:</label>
+				<input type="text" name="height-inches" id="height-inches" class="form-control">
+			</div>
+			<input id="submit" type="submit" name="submit" aria-role="button" class="btn btn-info btn-block">
 			<p>
-			I'm taller than . . .
+				<a href="">Reset</a>	
 			</p>
-			<div id="result">
+			<hr>
+			<div>
+				<p>
+				<em>I'm taller than . . .</em>
+				</p>
+				<div id="result">
+				</div>
 			</div>
 		</div>
-		
 	</div>
 </div>
 
