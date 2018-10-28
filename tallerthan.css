@@ -1,5 +1,5 @@
 body {
-	height:100vh; /* for vertical alignment */
+	/*height:100vh;  for vertical alignment */
 	background-color:#29504D;
 	color: #C4DCEA;
 }
@@ -8,6 +8,8 @@ body {
 }
 label {
 	display:block;
+	height:0;
+	visibility:hidden;
 }
 #result {
 	font-size:2em;
@@ -16,9 +18,19 @@ label {
 .content {
 	/*background-color:orange;*/
 }
+#directions {
+	margin-top:1em;
+}
 a, a:link, a:visited, a:active {
 	color:#fff;
 }
 a:hover {
 	color:#fff;
+}
+#title {
+	font-family:"Georgia",serif;
+	font-style:italic;
+	font-weight:bold;
+	width:100%;
+	text-align:center;
 }

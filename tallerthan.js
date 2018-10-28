@@ -172,7 +172,7 @@ $(document).ready( function() {
 			// print it to the #result div
 			document.getElementById('result').innerText = Object.keys(person)[0];
 		} else {
-			document.getElementById('directions').innerText = "Please enter a height greater than " + String(min_height).split('.')[0] + "\'" + String(Math.trunc(Number("0."+String(min_height).split('.')[1])*12)) + "\"";
+			document.getElementById('directions').innerText = "Please enter a height greater than " + String(min_height).split('.')[0] + "\'" + String(Math.trunc(Number("0."+String(min_height).split('.')[1])*12)) + "\".";
 		}
 
 	});
