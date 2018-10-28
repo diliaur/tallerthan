@@ -83,6 +83,8 @@ $(document).ready( function() {
 	// event listener for button click
 	document.getElementById('submit').addEventListener('click',function(){
 		
+		document.getElementById('result').innerText = ""; // clear when hit button
+
 		let height = 0;
 
 		let feet_box = document.getElementById('height-feet');
