@@ -111,6 +111,8 @@ $(document).ready( function() {
 
 		let min_height = 2.67;
 
+		console.log()
+
 		let desc = "Enter your height in feet and inches.";
 		if (height > min_height) {
 			document.getElementById('directions').innerText = desc;
@@ -121,7 +123,7 @@ $(document).ready( function() {
 			// print it to the #result div
 			document.getElementById('result').innerText = Object.keys(person)[0];
 		} else {
-			document.getElementById('directions').innerText = "Please enter a height greater than " + min_height + " feet.";
+			document.getElementById('directions').innerText = "Please enter a height greater than " + String(min_height).split('.')[0] + "\'" + String(Math.trunc(Number("0."+String(min_height).split('.')[1])*12)) + "\"";
 		}
 
 	});
