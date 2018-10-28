@@ -131,7 +131,7 @@ $(document).ready( function() {
 	document.getElementById('submit').addEventListener('click',function(){
 		
 		document.getElementById('result').innerText = ""; // clear when hit button
-
+		document.getElementById('directions').innerHTML = "<strong>See which famous people you're taller than.</strong><br/>Enter your height in feet and inches.";
 		let height = 0;
 
 		let feet_box = document.getElementById('height-feet');
@@ -162,9 +162,9 @@ $(document).ready( function() {
 
 		console.log()
 
-		let desc = "Enter your height in feet and inches.";
+		let desc = document.getElementById('directions').innerHTML;
 		if (height > min_height) {
-			document.getElementById('directions').innerText = desc;
+			document.getElementById('directions').innerHTML = desc;
 			while (height <= Object.values(person)[0]) {
 				random = Math.floor(Math.random() * celeb_heights.length);
 				person = celeb_heights[random];
